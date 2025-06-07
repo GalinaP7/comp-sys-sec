@@ -624,7 +624,7 @@ cleartext = (11**29)%91 = 72 (decrypted using N and d)
 						Be sure to either stop or delete this codespace when you are doneby clicking the "Stop" button or the "Delete" button in the Codespaces tab of your repository. 
 						</p>
 						<p>
-						Next, jump down to follow the lab directions in <xref ref="md5-hash" />. 
+						Next, jump down to follow the lab directions in <xref ref="md5-hash-continue" />. 
 						</p>
 					</subsubsection>
 					
@@ -653,7 +653,7 @@ root@vm-name:/</pre>
 	</note>
 					</subsubsection>
 					</subsection>
-					<subsection xml:id="md5-hash">
+					<subsection xml:id="md5-hash-continue">
 						<title>MD5 Hash</title>
 					<p>
 					MD5 is a message-digest algorithm that produces significantly better hashes than our Anagram algorithm. Most Linux distributions include a simple utility for creating an MD5 hash based on a file’s contents. This command is named <c>md5sum</c>. Typically this is used to detect if a file has been tampered with. A website may provide links to download software as well as an MD5 hash of the files so that you know what you’ve downloaded is correct. Similarly a security system may keep md5sums (MD5 hashes) of certain critical files to determine if they have been tampered with by malware. Let’s practice taking the md5sum of the 

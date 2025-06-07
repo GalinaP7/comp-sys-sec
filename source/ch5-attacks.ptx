@@ -612,7 +612,7 @@ $statement = "SELECT * FROM users WHERE name='" + $userName + "' AND password='"
 				</section>
 				<section xml:id="lab-mitm-with-scapy">
 					<title>Lab: MitM with Scapy</title>
-					
+					<introduction>
 					<p>
 						In this lab we will use a fake SSH server, 
 						<url href="https://github.com/jaksi/sshesame">sshesame</url>, and an interactive packet manipulation program, 
@@ -646,10 +646,56 @@ $statement = "SELECT * FROM users WHERE name='" + $userName + "' AND password='"
 					<p>
 					For this lab our IP addresses are configured statically and are known to the attacker. It is also assumed that the attacker is on the local network. Lastly victim has been poorly configured to ignore changes to the host key. This is not entirely unreasonable as many users just ignore the warnings and clear out the known_hosts file when prompted anyway.
 				</p>
+									</introduction>
+					<subsection xml:id="MitM-codespace">
+						<title>MitM with Scapy in a Github Codespace</title>
+						<p>
+							Go <url href="https://github.com/pearcej/security-scapy">github.com/pearcej/security-scapy</url>. Then:
+							<ol>
+								<li>
+									<p>
+										Fork this codespace into your own Github repository.
+									</p>
+								</li>
+								<li>
+									<p>
+										Navigate to your repository on GitHub.
+									</p>
+								</li>
+								<li>
+									<p>
+										Click the green Code button and select Codespaces.
+									</p>
+								</li>
+								<li>
+									<p>
+										Click "Create codespace on main".
+									</p>
+								</li>
+								<li>
+									<p>
+										Wait for the codespace to be created.
+									</p>
+								</li>
+							</ol>
+						Be sure to either stop or delete this codespace when you are doneby clicking the "Stop" button or the "Delete" button in the Codespaces tab of your repository. 
+						</p>
+						<p>
+						Next, jump down to follow the lab directions in <xref ref="MitM-continue" />. 
+						</p>
+					</subsection>
 					
+					<subsection xml:id="MitM-local">
+						<title>MitM with Scapy in a Local Docker Container</title>				
 					<p>
 						Start by downloading the 
-						<url href="https://github.com/rxt1077/it230/raw/main/labs/scapy.zip">scapy.zip</url> file which contains the Docker Compose configuration we will be using. Uncompress it to a directory where you have write access. This lab will require us to use three terminal windows/tabs: one for the 
+						<url href="https://github.com/rxt1077/it230/raw/main/labs/scapy.zip">scapy.zip</url> file which contains the Docker Compose configuration we will be using. Uncompress it to a directory where you have write access. 
+					</p>
+					</subsection>
+					<subsection xml:id="MitM-continue">
+						<title>Continue with the MitM with Scapy Lab</title>
+						<p>
+						This lab will require us to use three terminal windows/tabs: one for the 
 						<c>docker-compose up</c> command which will show the output of everything running in the background, one for the victim which will show an SSH session with the server, and one for the attacker which we will use to make the attack.
 					</p>
 					
@@ -982,11 +1028,11 @@ Received 2 packets, got 1 answers, remaining 0 packets
 				
 					</p>
 
-					<question>
+					<note>
 						<p>
-							Take a screenshot of your scapy session at this point showing that you completed an ICMP echo request/response with your name in it.
+							Your instructor may wish for you to take a screenshot of your scapy session at this point showing that you completed an ICMP echo request/response with your name in it.
 						</p>
-					</question>
+					</note>
 					
 					<p>
 					We can also determine MAC addresses at Layer 2 with an ARP "who-has" request. Let’s craft and send a broadcast ethernet frame with an ARP "who-has" request for the victims’s IP address. The result will tell use what the victim’s MAC address is:
@@ -1070,7 +1116,8 @@ Received 1 packets, got 1 answers, remaining 0 packets
 					attacker
 				</p>
 
-					<pre>&gt;&gt;&gt; send(bad_arp)
+					<pre>
+						&gt;&gt;&gt; send(bad_arp)
 .
 Sent 1 packets.</pre>
 
@@ -1138,7 +1185,12 @@ why not?
 						<c>docker-compose up</c>, exit out of the victim, and exit out of the attacker.
 				
 					</p>
-					
+					<note>
+						<p>
+							If you chose to use a Github codespace, don't forget to stop or delete the codespace by clicking the "Stop" button or the "Delete" button in the Codespaces tab of your repository.
+						</p>
+					</note>
+				</subsection>
 				</section>
 				<section xml:id="attacks-review">
 					<title>Review Questions</title>
@@ -1161,5 +1213,6 @@ why not?
 							</li>
 						</ol>
 					</p>
+
 				</section>
 </chapter>
