@@ -990,9 +990,7 @@ Nmap done: 1 IP address (1 host up) scanned in 28.39 seconds</pre>
 						<c>docker-compose down</c> to stop 
 						victim from running in the background.					</p>
 						<note>
-							
-
-										<p>
+						<p>
 							If you chose to use a Github codespace, don't forget to stop or delete the codespace by clicking the "Stop" button or the "Delete" button in the Codespaces tab of your repository.
 						</p>
 						</note>
