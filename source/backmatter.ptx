@@ -6,12 +6,7 @@
 <!-- solutions in the next. Then there is an appendix -->
 <!-- with all notation generated, and finally the index. -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
-      <title>Index</title>
-
-      <appendix>
-              <title>Text Index</title>
-                    <p>
-    <index-list />
+      <title>Appendices</title>
 
   <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
 
@@ -24,8 +19,8 @@
         <p> <em>Authoring Language</em>: 
 This book was authored in <pretext />. </p>
    </note>
-  </p>
+
   
-</appendix>
+
 </backmatter>
 
