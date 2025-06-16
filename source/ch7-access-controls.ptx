@@ -160,15 +160,11 @@
 					An organization’s building is a large ongoing investment and is often an unexpected security asset or weakness. Most technical security controls can be completely bypassed or disabled if physical security is not taken into account. As such, steps must be taken to assure that physical access is limited to protect not only the building and its contents but also the data that is created and stored there.
 				</p>
 					<figure>
-						<caption></caption>
+						<caption><url href="https://commons.wikimedia.org/wiki/File:Inveraray_Castle_-_south-west_facade.jpg">DeFacto</url>, 
+						<url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>, via Wikimedia Commons</caption>
 						<image source="castle.jpg" decorative="yes"/>
 					</figure>
 
-					<p>
-						<url href="https://commons.wikimedia.org/wiki/File:Inveraray_Castle_-_south-west_facade.jpg">DeFacto</url>, 
-						<url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>, via Wikimedia Commons
-				
-					</p>
 				</introduction>
 
 
@@ -186,15 +182,10 @@
 					<subsection xml:id="biometrics">
 						<title>Biometrics</title>
 						<figure>
-							<caption></caption>
+							<caption><url href="https://pixabay.com/illustrations/biometrics-access-identification-4503107/">Biometrics Access Identification</url> is used under 
+							<url href="https://pixabay.com/service/license/">Pixabay License</url></caption>
 							<image source="biometric.jpg" decorative="yes"/>
 						</figure>
-
-						<p>
-							<url href="https://pixabay.com/illustrations/biometrics-access-identification-4503107/">Biometrics Access Identification</url> is used under 
-							<url href="https://pixabay.com/service/license/">Pixabay License</url>.
-					
-						</p>
 
 						<p>
 						<idx>biometric security</idx><term>Biometric security</term> devices identify people based on on or more physical characteristics. This has the great advantage of convenience. A person may occasionally forget to bring their ID card in to work, but they will never forget to bring their fingertip or iris! Similarly, since the items being used for identification are attached to the people that using them, biometric characteristics are difficult to steal or impersonate.
@@ -221,11 +212,11 @@
 					</p>
 
 						<figure xml:id="fig-rfid">
-						<caption></caption>
+						<caption>RFID Proximity Card</caption>
 						<image source="rfid.svg" width="60%">
 							<shortdescription>Diagram illustrating the internal components of an RFID proximity card.</shortdescription>
 							<description>
-							<p>The diagram, titled "Proximity Cards," shows the internal structure of an RFID (Radio-Frequency Identification) proximity card. The outer boundary is indicated by a dashed rectangle labeled "Card Edge." Inside, a prominent feature is a large, spiraling coil of wire, explicitly labeled with an arrow as "Antenna"; this coil occupies most of the card's internal area. Connected to the inner termination of this antenna coil is a smaller rectangular block labeled "Capacitor and IC" (Integrated Circuit). The diagram illustrates how the antenna is a key component for receiving power and transmitting the card's ID when energizing by a reader's electromagnetic field.</p>
+							<p>The diagram, titled "RFID Proximity Card," shows the internal structure of an RFID (Radio-Frequency Identification) proximity card. The outer boundary is indicated by a dashed rectangle labeled "Card Edge." Inside, a prominent feature is a large, spiraling coil of wire, explicitly labeled with an arrow as "Antenna"; this coil occupies most of the card's internal area. Connected to the inner termination of this antenna coil is a smaller rectangular block labeled "Capacitor and IC" (Integrated Circuit). The diagram illustrates how the antenna is a key component for receiving power and transmitting the card's ID when energizing by a reader's electromagnetic field.</p>
 							</description>
 						</image>
 						</figure>
@@ -260,14 +251,10 @@
 						<title>Cameras</title>
 
 						<figure>
-							<caption></caption>
+							<caption><url href="https://commons.wikimedia.org/wiki/File:CCTV_camera_and_iFacility_IP_Audio_speaker_on_a_pole.jpg">CCTV camera and iFacility IP Audio speaker on a pole</url> by RickySpanish used under 
+							<url href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</url></caption>
 							<image source="cctv.jpg" width="40%" decorative="yes"/>
 						</figure> 
-
-						<p>
-							<url href="https://commons.wikimedia.org/wiki/File:CCTV_camera_and_iFacility_IP_Audio_speaker_on_a_pole.jpg">CCTV camera and iFacility IP Audio speaker on a pole</url> by RickySpanish used under 
-							<url href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</url>
-						</p>
 
 						<p>
 						Cameras afford the operator an "always on" view of a location. Awareness that all activity is being recorded can persuade attackers to aim for an easier target or not continue with their nefarious actions. Even if an attacker persists the camera footage can provide proof of the attack as well as evidence that can be used later to track the attacker or make better security decisions.
@@ -301,7 +288,7 @@
 						<title>Mantraps</title>
 
 						<figure xml:id="fig-mantrap">
-						<caption></caption>
+						<caption>Mantrap Physical Access Control System</caption>
 						<image source="mantrap.svg.svg">
 							<shortdescription>Diagram or illustration of a mantrap physical access control system.</shortdescription>
 							<description>
@@ -374,11 +361,11 @@
 					</p>
 
 						<figure xml:id="fig-permissions">
-						<caption></caption>
+						<caption>Unix-style File Permissions (Read, Write, Execute)</caption>
 						<image source="permissions.svg" width ="75%">
-							<shortdescription>Diagram illustrating Unix file permissions (read, write, execute).</shortdescription>
+							<shortdescription>Diagram illustrating Unix-style file permissions (read, write, execute).</shortdescription>
 							<description>
-							<p>The image would provide a visual explanation of the Unix file permission system. This includes a breakdown of the symbolic notation (e.g., `rwx` for read, write, and execute) and how these permissions apply to the three categories of users: owner, group, and others. It also illustrates the octal (numeric) representation of these permissions (e.g., 4 for read, 2 for write, 1 for execute) and how they combine to form a complete permission.</p>
+							<p>The image would provide a visual explanation of the Unix-style file permission system. This includes a breakdown of the symbolic notation (e.g., `rwx` for read, write, and execute) and how these permissions apply to the three categories of users: owner, group, and others. It also illustrates the octal (numeric) representation of these permissions (e.g., 4 for read, 2 for write, 1 for execute) and how they combine to form a complete permission.</p>
 							</description>
 						</image>
 						</figure>
@@ -505,7 +492,7 @@
 						</p>
 
 						<figure xml:id="fig-oauth">
-						<caption></caption>
+						<caption>OpenID Authentication (top) vs. Pseudo-Authentication using OAuth (bottom)</caption>
 						<image source="oauth.svg">
 							<shortdescription>Diagram comparing OpenID Authentication with Pseudo-Authentication using OAuth, illustrating metaphorical credential exchanges with an identity/API provider.</shortdescription>
 							<description>

@@ -56,7 +56,7 @@
 					</p>
 
 						<figure xml:id="fig-mitb">
-						<caption> Man-in-the-Browser Attack</caption>
+						<caption>Man-in-the-Browser Attack</caption>
 						<image source="mitb.png">
 							<shortdescription>Diagram illustrating a Man-in-the-Browser (MitB) attack where malware on a user's workstation alters a financial transaction without the user's knowledge.</shortdescription>
 							<description>

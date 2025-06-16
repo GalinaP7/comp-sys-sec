@@ -16,7 +16,7 @@
 						<title>Virtual Machines</title>
 
 						<figure xml:id="fig-vm">
-						<caption></caption>
+						<caption> Virtual Machine Deployment vs. Container Deployment Architectures</caption>
 						<image source="vm.svg" width="70%">
 							<shortdescription>Comparison of Virtual Machine deployment and Container deployment architectures.</shortdescription>
 							<description>

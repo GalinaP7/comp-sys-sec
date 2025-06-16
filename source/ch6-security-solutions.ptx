@@ -48,7 +48,7 @@
 					<title>Layered Security</title>
 
 					<figure xml:id="fig-layers">
-					<caption></caption>
+					<caption>Six-Layer Security Model</caption>
 					<image source="layers.svg" width="80%">
 						<shortdescription>Diagram illustrating a conceptual layered security model with six distinct levels of defense.</shortdescription>
 						<description>
@@ -144,7 +144,7 @@
 					<subsection xml:id="proxy">
 						<title>Proxy</title>
 						<figure xml:id="fig-tls-proxy">
-						<caption></caption>
+						<caption>TLS Decrypting Proxy</caption>
 						<image source="tls-proxy.svg">
 							<shortdescription>Diagram illustrating the operational flow of a TLS decrypting proxy between a user and a server.</shortdescription>
 							<description>
@@ -325,7 +325,7 @@
 				<section xml:id="siem">
 					<title>SIEM</title>
 					<figure xml:id="fig-seim">
-					<caption></caption>
+					<caption>Security and Information Event Management System</caption>
 					<image source="seim.svg" width="85%">
 						<shortdescription>Diagram illustrating a Security and Information Event Management (SIEM) system aggregating data from multiple security and network sources.</shortdescription>
 						<description>
