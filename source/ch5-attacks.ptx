@@ -689,6 +689,12 @@ Scapy can forge or decode packets, send them on the wire, capture them, and matc
 						Start by downloading the 
 						<url href="https://github.com/rxt1077/it230/raw/main/labs/scapy.zip">scapy.zip</url> file which contains the Docker Compose configuration we will be using. Uncompress it to a directory where you have write access. 
 					</p>
+					<pre>
+						WARNING:
+						Do NOT download or run this file on your host machine.
+						It is intended to be used only inside a Docker container.
+						Running it directly on your host may result in unexpected behavior or security risks.
+					</pre>
 					</subsection>
 					<subsection xml:id="MitM-continue">
 						<title>Continue with the MitM with Scapy Lab</title>
