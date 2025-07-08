@@ -692,6 +692,99 @@
 
 					</subsection>
 				</section>
+				<section xml:id="osl-model">
+					<title>The OSI Model and Protocol Layering</title>
+
+					<introduction>
+					<p>Now that we’ve explored key protocols used across the TCP/IP model, it’s helpful to examine the OSI (Open Systems Interconnection) model, which provides a conceptual framework for understanding how data moves across a network. The OSI model organizes communication into seven distinct layers, each with a specific function. Although modern systems commonly use the four-layer TCP/IP model, the OSI model offers a more detailed structure that helps clarify where different protocols operate and where vulnerabilities may occur.</p>
+					</introduction>
+					<p>The OSI model breaks down network communication into the following layers:</p>
+					<p>
+						<ol>
+							<li>
+								<p>
+									Physical – Transfers raw bits over a physical medium (e.g., cables, radio waves).
+								</p>
+							</li>
+							<li>
+								<p>
+									Data Link – Provides node-to-node data transfer and handles error correction from the physical layer.
+								</p>
+							</li>
+							<li>
+								<p>
+									Network – Manages data routing, addressing, and packet forwarding across networks.
+								</p>
+							</li>
+							<li>
+								<p>
+									Transport – Ensures complete data transfer with error recovery and flow control.
+								</p>
+							</li>
+							<li>
+								<p>
+									Session – Manages sessions between applications, maintaining state and synchronization.
+								</p>
+							</li>
+							<li>
+								<p>
+									Presentation – Transforms data into a format suitable for the application layer, handling encryption and
+									compression.
+								</p>
+							</li>
+							<li>
+								<p>
+									Application – Provides network services to end-user applications, such as web browsers and email clients.
+								</p>
+							</li>
+						</ol>
+					</p>
+
+					<table>
+						<title></title>
+						<tabular>
+							<row header="yes">
+								<cell halign="left">1. Physical</cell>
+								<cell halign="left">Network Access</cell>
+								<cell halign="left">Wi-Fi</cell>
+								
+							</row>
+							<row>
+								<cell halign="left">2. Data Link</cell>
+								<cell halign="left">Internet</cell>
+								<cell halign="left">IP, ICMP</cell>
+								
+							</row>
+							<row>
+								<cell halign="left">3. Network</cell>
+								<cell halign="left">Internet</cell>
+								<cell halign="left">IP, ICMP, NAT, IPsec</cell>
+							</row>
+							<row>
+								<cell halign="left">4. Transport</cell>
+								<cell halign="left">Transport</cell>
+								<cell halign="left">TCP, UDP</cell>
+							</row>
+							<row>
+								<cell halign="left">5. Session</cell>
+								<cell halign="left">Application</cell>
+								<cell halign="left">SSH, RDP, Telnet</cell>
+							</row>
+							<row>
+								<cell halign="left">6. Presentation</cell>
+								<cell halign="left">Application</cell>
+								<cell halign="left">TLS, SSL</cell>
+							</row>
+							<row>
+								<cell halign="left">7. Application</cell>
+								<cell halign="left">Application</cell>
+								<cell halign="left">HTTP, HTTPS, DNS, FTP, DHCP, SMTP, SNMP, IMAP, POP3, LDAP, NTP</cell>
+							</row>
+						</tabular>
+					</table>
+
+				</section>
+
 				<section xml:id="lab-scanning-with-nmap">
 					<title>Lab: Scanning with Nmap</title>
 
@@ -972,15 +1065,13 @@ Nmap done: 1 IP address (1 host up) scanned in 28.39 seconds</pre>
 						<url href="https://linux.die.net/man/1/ftp">This man page may be of some help.</url>
 					</p>
 
-					<exercise label = "fillin-Password" xml:id="fillin-password">
-						<statement>
-						<p>BONUS: Remembering what you learned in the Hash it Out lab, what is the root password on the victim machine?<var/></p></statement><setup><var>
-						<condition string="hunter"><feedback><p>Right!</p></feedback></condition>
-						<condition string="^\s*default\s*$"><feedback><p>Incorrect. Try taking advantage of the insecure ftp conection to find the users password.</p></feedback></condition></var></setup>
 
-					</exercise>
-
-
+					<question>
+						<p>
+							BONUS: Remembering what you learned in the <em>Hash it Out</em> lab, what is the root password on the victim machine?
+						</p>
+					</question>
+					
 					<question>
 						<p>
 							BONUS: How can you test to see if you got it right? What does this say about how ProFTP is configured on <em>victim</em>?
