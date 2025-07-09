@@ -1197,6 +1197,109 @@ root@server's password:
 							If you chose to use a Github codespace, don't forget to stop or delete the codespace by clicking the "Stop" button or the "Delete" button in the Codespaces tab of your repository.
 						</p>
 					</note>
+
+				<exercise label="tf-server-mac" xml:id="tf-server-mac">
+					<statement>
+						<p><em>True or False</em>: The server's MAC address was captured using an ICMP echo reply in Scapy.</p>
+					</statement>
+					<choices>
+						<choice correct="yes">
+							<statement>
+								<p>True</p>
+							</statement>
+							<feedback>
+								<p>Correct! Scapy's srp1() command captured the ICMP echo reply, revealing the MAC address in the Ethernet layer.</p>
+							</feedback>
+						</choice>
+						<choice>
+							<statement>
+								<p>False</p>
+							</statement>
+							<feedback>
+								<p>Not quite. The MAC address came from the response to an ICMP ping built with Scapy and shown using show().</p>
+							</feedback>
+						</choice>
+					</choices>
+				</exercise>
+				
+				<exercise label="mc-ip-add" xml:id="mc-ip-add">
+					<statement>
+						<p>What effect does the command <c>ip addr add 172.20.0.5 dev eth0</c> have on the attacker system?</p>
+					</statement>
+					<choices>
+						<choice>
+							<statement>
+								<p>It deletes the original IP address of the attacker system.</p>
+							</statement>
+							<feedback>
+								<p>Nope — this command adds a second IP, it doesn’t remove the original one.</p>
+							</feedback>
+						</choice>
+						<choice>
+							<statement>
+								<p>It changes the MAC address of the attacker to match the server.</p>
+							</statement>
+							<feedback>
+								<p>Incorrect. The command does not affect the MAC address, only the IP configuration.</p>
+							</feedback>
+						</choice>
+						<choice correct="yes">
+							<statement>
+								<p>It allows the attacker to receive traffic intended for the server’s IP address.</p>
+							</statement>
+							<feedback>
+								<p>Correct! This effectively lets the attacker impersonate the server at the IP layer.</p>
+							</feedback>
+						</choice>
+						<choice>
+							<statement>
+								<p>It configures port forwarding between victim and server.</p>
+							</statement>
+							<feedback>
+								<p>Not quite. No port forwarding is set here — it’s just assigning an IP.</p>
+							</feedback>
+						</choice>
+					</choices>
+				</exercise>
+				<exercise label="mc-arp-discovery" xml:id="mc-arp-discovery">
+					<statement>
+						<p>How did the attacker discover the victim’s MAC address in this lab?</p>
+					</statement>
+					<choices>
+						<choice>
+							<statement>
+								<p>By scanning the MAC address table of the switch.</p>
+							</statement>
+							<feedback>
+								<p>Nope — the lab doesn’t involve switches or MAC tables.</p>
+							</feedback>
+						</choice>
+						<choice correct="yes">
+							<statement>
+								<p>By sending an ARP who-has request to the victim’s IP address.</p>
+							</statement>
+							<feedback>
+								<p>Exactly! The attacker sent a broadcast ARP request and got the MAC in the ARP reply.</p>
+							</feedback>
+						</choice>
+						<choice>
+							<statement>
+								<p>By using the scapy.ping() function.</p>
+							</statement>
+							<feedback>
+								<p>Incorrect — that would send ICMP, not ARP. ARP is used to find MAC addresses at Layer 2.</p>
+							</feedback>
+						</choice>
+						<choice>
+							<statement>
+								<p>By guessing the MAC based on the IP address and Docker defaults.</p>
+							</statement>
+							<feedback>
+								<p>Nope. While Docker MACs follow patterns, the attacker retrieved it with an actual ARP reply, not a guess.</p>
+							</feedback>
+						</choice>
+					</choices>
+				</exercise>
 				</subsection>
 				</section>
 				<section xml:id="attacks-review">
